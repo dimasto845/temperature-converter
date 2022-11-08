@@ -6,22 +6,29 @@ fn main() -> io::Result<()> {
     let mut mode = String::new();
     let mut input = String::new();
 
-    println!("What do you want to transform?\nType f for F° to C°, type c for C° to F°, type quit for exiting");
-
-    let stdin = io::stdin();
-
-    stdin.read_line(&mut mode)?;
-
+    loop {
+        println!("What do you want to transform?\nType f for F° to C°, type c for C° to F°, type quit for exiting");
     
-    println!("Input the value");
-    stdin.read_line(&mut input)?;
+        let stdin = io::stdin();
+    
+        stdin.read_line(&mut mode)?;
+        let mode: &str = mode.trim();
 
-    let mode = mode.trim();
-    let input = input.trim();
+        if mode.eq("quit") {
+            break;
+        }
+    
+        
+        println!("Input the value");
+        stdin.read_line(&mut input)?;
+    
+        let input = input.trim();
+    
+        
+    
+        println!("{mode} {input}");
 
-
-
-    println!("{mode} {input}");
+    }
 
     Ok(())
 }
