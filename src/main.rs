@@ -1,11 +1,11 @@
 use std::io;
 
 fn main() -> io::Result<()> {
-    println!("Temperature transformer!");
+    println!("Temperature converter!");
     let stdin = io::stdin();
     
     loop {
-        println!("What do you want to transform?\nType f for F° to C°, type c for C° to F°, type quit for exiting");
+        println!("What do you want to convert?\nf for F° to C°, c for C° to F°, quit for exiting");
         let mut mode = String::new();
         let mut input = String::new();
     
@@ -30,7 +30,7 @@ fn main() -> io::Result<()> {
         let result: f32 = if mode.eq("f") {fahrenheit_to_celsius(input)} else {celsius_to_fahrenheit(input)};
         let unit = if mode.eq("f") {"C"} else {"F"};
 
-        println!("{result} {unit}°");
+        println!("{:.2} {unit}°", result);
     }
 
     Ok(())
