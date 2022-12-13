@@ -14,6 +14,11 @@ fn main() -> std::io::Result<()> {
         .default(0)
         .interact_opt()?;
 
+    if let None = from {
+        println!("Goodbye!");
+        return Ok(());
+    }
+
     // User prompt for the output temperature unit
     let to = Select::with_theme(&ColorfulTheme::default())
         .with_prompt("What unit do you want to convert it into?")
@@ -22,6 +27,11 @@ fn main() -> std::io::Result<()> {
         .items(&items)
         .default(0)
         .interact_opt()?;
+
+    if let None = to {
+        println!("Goodbye!");
+        return Ok(());
+    }
 
     // Initial value prompt
     let input: String = Input::with_theme(&ColorfulTheme::default())
@@ -81,9 +91,9 @@ fn main() -> std::io::Result<()> {
                     println!("\nResult: {}° {}", result, items[output_index]);
                 }
             }
-            None => println!("Goodbye!"),
+            None => {}
         },
-        None => println!("Goodbye!"),
+        None => {}
     }
 
     Ok(())
