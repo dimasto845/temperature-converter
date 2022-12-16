@@ -2,24 +2,16 @@ use converter::*;
 use dialoguer::{theme::ColorfulTheme, Input, Select};
 
 fn main() -> std::io::Result<()> {
-    // Define the possible choices of measurement unit
     let items = vec!["Celsius", "Fahrenheit", "Kelvin"];
 
-    // User prompt for selecting the initial temperature unit
     let from = Select::with_theme(&ColorfulTheme::default())
         .with_prompt("What unit do you want to convert from?")
-        .clear(false)
-        .report(false)
+        .clear(true)
+        .report(true)
         .items(&items)
         .default(0)
         .interact_opt()?;
 
-    if let None = from {
-        println!("Goodbye!");
-        return Ok(());
-    }
-
-    // User prompt for the output temperature unit
     let to = Select::with_theme(&ColorfulTheme::default())
         .with_prompt("What unit do you want to convert it into?")
         .clear(false)
@@ -28,15 +20,9 @@ fn main() -> std::io::Result<()> {
         .default(0)
         .interact_opt()?;
 
-    if let None = to {
-        println!("Goodbye!");
-        return Ok(());
-    }
-
-    // Initial value prompt
     let input: String = Input::with_theme(&ColorfulTheme::default())
         .with_prompt("Please write the temperature")
-        .report(false)
+        .report(true)
         .validate_with(|input: &String| -> Result<(), &str> {
             if let Ok(_) = input.parse::<f32>() {
                 Ok(())
@@ -46,11 +32,8 @@ fn main() -> std::io::Result<()> {
         })
         .interact_text()?;
 
-    // Convert the input string to a floating point number,
-    // unwrapping fearlessly because the input has already been validated
     let input_number: f32 = input.parse().unwrap();
 
-    // Match all possible choices, using the corresponding function on each one
     match from {
         Some(input_index) => match to {
             Some(output_index) => {
