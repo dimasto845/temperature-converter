@@ -1,13 +1,15 @@
 use converter::*;
 use dialoguer::{theme::ColorfulTheme, Input, Select};
 
+///this program will convert temprerature
+
 fn main() -> std::io::Result<()> {
     let items = vec!["Celsius", "Fahrenheit", "Kelvin"];
 
     let from = Select::with_theme(&ColorfulTheme::default())
         .with_prompt("What unit do you want to convert from?")
-        .clear(true)
-        .report(true)
+        .clear(false)
+        .report(false)
         .items(&items)
         .default(0)
         .interact_opt()?;

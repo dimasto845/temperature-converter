@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":[["remove_dir_all","Reliably removes a directory and all of its children."]]};

@@ -1,0 +1,4 @@
+(function() {var implementors = {};
+implementors["console"] = [{"text":"impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.63.0/std/os/windows/io/raw/trait.AsRawHandle.html\" title=\"trait std::os::windows::io::raw::AsRawHandle\">AsRawHandle</a> for <a class=\"struct\" href=\"console/struct.Term.html\" title=\"struct console::Term\">Term</a>","synthetic":false,"types":["console::term::Term"]}];
+implementors["tempfile"] = [{"text":"impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.63.0/std/os/windows/io/raw/trait.AsRawHandle.html\" title=\"trait std::os::windows::io::raw::AsRawHandle\">AsRawHandle</a> for <a class=\"struct\" href=\"tempfile/struct.NamedTempFile.html\" title=\"struct tempfile::NamedTempFile\">NamedTempFile</a>","synthetic":false,"types":["tempfile::file::NamedTempFile"]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

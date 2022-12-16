@@ -1,0 +1,12 @@
+C:\Users\dimka\Documents\temperature-converter\doc\debug\deps\tempfile-80b4ab7df861c00b.rmeta: C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\lib.rs C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\dir.rs C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\error.rs C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\file\mod.rs C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\file\imp\mod.rs C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\spooled.rs C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\util.rs C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\file\imp\windows.rs
+
+C:\Users\dimka\Documents\temperature-converter\doc\debug\deps\tempfile-80b4ab7df861c00b.d: C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\lib.rs C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\dir.rs C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\error.rs C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\file\mod.rs C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\file\imp\mod.rs C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\spooled.rs C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\util.rs C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\file\imp\windows.rs
+
+C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\lib.rs:
+C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\dir.rs:
+C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\error.rs:
+C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\file\mod.rs:
+C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\file\imp\mod.rs:
+C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\spooled.rs:
+C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\util.rs:
+C:\Users\dimka\.cargo\registry\src\github.com-1ecc6299db9ec823\tempfile-3.3.0\src\file\imp\windows.rs:
