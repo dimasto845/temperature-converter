@@ -70,11 +70,8 @@ fn main() -> std::io::Result<()> {
                     }
                 }
 
-                if items[output_index] == "Kelvin" {
-                    println!("\nResult: {} Kelvin", result);
-                } else {
-                    println!("\nResult: {}° {}", result, items[output_index]);
-                }
+                println!("\nResult: {}° {}", result, items[output_index]);
+                
             }
             None => {}
         },
